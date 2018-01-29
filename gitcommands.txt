@@ -1,0 +1,57 @@
+https://github.com/joshnh/Git-Commands
+
+#Initialize a local Git Reposityory
+
+git init
+
+# git clone ssh://git@github.com/[username]/[repository-name].git
+
+
+Basig Sanphotting
+
+# Check status of Repo
+
+git status
+
+# remove a file or folder
+
+git rm - r
+
+Branching & Merging
+
+# List Branches
+
+git branch
+
+# List all branches local and remote
+
+git branch -a
+
+# Create a branch a checkout to branche
+
+git checkout -b [branch name]
+
+
+# Add all files to commit
+
+git add -A
+
+# Add a single file to commit
+
+git add [file-name]
+
+# Restore a File
+
+git checkout -- [file-name]
+
+# Merge branch into the active branch
+
+
+
+
+
+
+
+
+
+
