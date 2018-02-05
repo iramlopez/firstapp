@@ -21,6 +21,9 @@ def myapp():
 @app.route('/myapp/<string:room>')
 def myapp_rooms(room):
     return render_template('rooms.html',room=room)
-
+@app.route("/chris")
+def myFunction():
+    return render_template("chris.html")
 if __name__== "__main__":
     app.run(debug=True)
+
