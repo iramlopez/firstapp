@@ -12,6 +12,10 @@ app = Flask(__name__)
 def index():
     return "Hello World"
 
+@app.route('/juangarcia')
+def myfunction():
+    return render_template('juangarcia.html')
+
 #Returning a template page
 @app.route('/myapp')
 def myapp():
