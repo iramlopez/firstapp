@@ -26,6 +26,16 @@ def myapp():
 def myapp_rooms(room):
     return render_template('rooms.html',room=room)
 
+@app.route("/myjilhouse")
+def myjilfunction():
+    button1='on'
+    button2='off'
+    devices={'button1':'on',
+             'button2':'off',
+             'button3':'on'
+             }
+    return render_template("jil_index.html", devices=devices)
+
 @app.route("/chris")
 def myFunction2():
     return render_template("chris.html")
