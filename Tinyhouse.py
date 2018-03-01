@@ -26,31 +26,42 @@ def index():
 
 @app.route('/switches', methods=['GET','POST'])
 def switches():
+    setup_switches = {
+        'kitchen': 11,
+        'livingroom': 13,
+        'bedroom': 15,
+        'lamp1': 17,
+        'lamp2': 19
+    }
     if request.method=='POST':
         device=request.form['port']
         print(device)
-
         try:
             print("Value is an int")
             val=int(device)
             print(device)
-            switcher={
+            switches={
                 '1':11,
                 '2':13,
-                '3':15
+                '3':15,
+                '4':17,
+                '5':19
             }
         except ValueError:
             print("Value is a string")
             print(device)
-            switcher={
+            switches={
                 'kitchen':11,
                 'livingroom':13,
-                'bedroom':15
+                'bedroom':15,
+                'lamp1':17,
+                'lamp2':19
             }
         print("Setting the switch")
-        print(switcher[device])
-        func=switcher.get(switcher[device], lambda: GPIO.output(switcher[device], GPIO.HIGH))
-    return render_template('switches.html')
+        print(switches[device])
+
+    print(setup_switches)
+    return render_template('rooms.html', switches=setup_switches)
 
 if __name__== "__main__":
     app.run(debug=True, host="0.0.0.0")
