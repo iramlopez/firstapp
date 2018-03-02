@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='./css/bootstrap.min.css') }}" >
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='./css/bootstrap-theme.min.css') }}">
+
+    <!-- Custom stylesheet -->
+    <link rel=stylesheet type="text/css" href="{{ url_for('static', filename='./css/style.css') }}">
+
+</head>
+
+<body>
+<a href="http://getbootstrap.com/docs/3.3/components">Boostrap Components</a>
+<a href="https://www.w3schools.com/bootstrap/default.asp">Boostrap Tutorial</a>
+    <div class="container">
+        <div class="row">
+			<div class="col-lg-12">
+				<h3>First Page Responsive</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2"><h3>Col-2</h3></div>
+			<div class="col-lg-2"><h3>Col-2</h3></div>
+			<div class="col-lg-2"><h3>Col-2</h3></div>
+			<div class="col-lg-3"><h3>Col-3</h3></div>
+			<div class="col-lg-3"><h3>Col-3</h3></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="{{url_for('static',filename='./js/jquery-3.2.1.min.js') }}"></script>
+    <script type="text/javascript"  src="{{url_for('static',filename='./js/bootstrap.min.js') }}"></script>
+    <script type = "text/javascript" src = "{{ url_for('static', filename = './js/main.js') }}" ></script>
+
+</body>

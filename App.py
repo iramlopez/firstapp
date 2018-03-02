@@ -30,6 +30,11 @@ def myapp_rooms(room):
 def myFunction2():
     return render_template("chris.html")
 
+@app.route("/HIram'sTinyHouse")
+def hiramFunction():
+    return render_template("HIram'sTinyHouse.html")
+
+
 if __name__== "__main__":
     app.run(debug=True)
 
