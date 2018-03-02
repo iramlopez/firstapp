@@ -22,7 +22,16 @@ GPIO.setup(15, GPIO.OUT) # Set up pint 27
 #Returning a basic response
 @app.route('/')
 def index():
-    return "Hello World"
+    dinamic_navbar={
+        'Community':'community.html',
+        'Frontdooor':'frontdoor.html'
+    }
+    return render_template('mainpage.html', navbar=dinamic_navbar)
+
+
+@app.route('/community', methods=['GET','POST'])
+def community():
+    return render_template('community.html')
 
 @app.route('/switches', methods=['GET','POST'])
 def switches():
