@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1E90FF;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #0066CC;
+}
+.active{
+  background-color: #0066CC;
+}
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  margin-bottom: 9px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #1E90FF;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  align-content: center;
+}
+
+button:hover {background-color: #0066CC}
+
+button:active {
+  background-color: #0066CC;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+p{
+  font-family: Times New Romans;
+  font-size: 24px;
+  text-align: center;
+
+}
+body{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 15px solid #0066CC;
+  text-align: center;
+  background-color: #99CCFF;
+}
+h1{
+  border: 2px solid #1E90FF;
+  border-bottom: 2px solid #0066CC;
+  background-color: #0059B3;
+}
+</style>
+</head>
+<body>
+<h1>Tiny House Project</h1>
+<ul>
+  <li><a href="#community">Community</a></li>
+  <li><a href="#frontdoor">Front Door</a></li>
+  <li><a class="active" href="#livingroom">Living Room</a></li>
+  <li><a href="#bedroom">Bedroom</a></li>
+  <li><a href="@utilities">Utilities</a></li>
+  <li><a href="@remote">Remote</a></li>
+</ul>
+<h2>Living Room</h2>
+<p>Hello, and welcome to the Living Room control page. Here, you can control temperature, fans, and windows to suit your liking!</p>
+<br><button>Turn A/C on</button><button>Turn A/C off</button>
+<br><p>Current Temperature: 73°</p>
+<br><button>Turn Heater on</button><button>Turn Heater off</button>
+<br><button>Turn Fan on</button><button>Turn Fan off</button>
+<br><button>Open Window 1</button><button>Open Window 2</button>
+<br><button>Close Window 1</button><button>Close Window 2</button>
+</body>
+</html>

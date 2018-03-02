@@ -21,10 +21,24 @@ def myfunction():
 def myapp():
     return render_template('index.html')
 
+@app.route('/alejandros')
+def myFunction():
+    return render_template('alejandros.html')
+
 #Returining a page with data request
 @app.route('/myapp/<string:room>')
 def myapp_rooms(room):
     return render_template('rooms.html',room=room)
+
+@app.route("/myjilhouse")
+def myjilfunction():
+    button1='on'
+    button2='off'
+    devices={'button1':'on',
+             'button2':'off',
+             'button3':'on'
+             }
+    return render_template("jil_index.html", devices=devices)
 
 @app.route("/chris")
 def myFunction2():
