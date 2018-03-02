@@ -17,6 +17,10 @@ def index():
 def myapp():
     return render_template('index.html')
 
+@app.route('/alejandros')
+def myFunction():
+    return render_template('alejandros.html')
+
 #Returining a page with data request
 @app.route('/myapp/<string:room>')
 def myapp_rooms(room):
