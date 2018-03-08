@@ -1,13 +1,17 @@
 {% extends "index.html" %}
+
 {% block nav_list %}
-    {% for i=1 in range(5) %}
-        <li> {{ i}} </li>
+    {% for room in rooms %}
+        <li role="presetation"><a href="{{rooms[room]['page'] }}">{{ rooms[room]['label'] }}</a></li>
     {% endfor %}
 {% endblock %}
+
 {% block body %}
+
 <div class="row">
     {% include "nbar.html" %}
 </div>
+
 <div class="row">
     <div class="col-lg-3 col-md-3 col-sm-3">
         <P>This is the a 1g 3</P>
@@ -16,7 +20,7 @@
         {% endfor %}
     </div>
     <div class="col-lg-8 col-md-8 col-sm-8">
-        <P>This is the a 1g 8</P>
+        <P><button class="btn btn-primary" id="button1">Button 1</button></P>
     </div>
 </div>
 {% endblock %}
@@ -25,5 +29,3 @@
         <p>This is the footer</p>
     </div>
 {% endblock %}
-
-
