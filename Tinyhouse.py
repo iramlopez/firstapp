@@ -1,5 +1,6 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, jsonify
 import RPi.GPIO as GPIO
+from config import Config
 import time
 app = Flask(__name__)
 
@@ -22,11 +23,16 @@ GPIO.setup(15, GPIO.OUT) # Set up pint 27
 #Returning a basic response
 @app.route('/')
 def index():
-    dinamic_navbar={
-        'Community':'community.html',
-        'Frontdooor':'frontdoor.html'
-    }
+    config=Config()
+    dinamic_navbar=config.getNavigationBar()
     return render_template('mainpage.html', navbar=dinamic_navbar)
+
+@app.route('/home')
+def home():
+    config=Config()
+    rooms=config.getRooms()
+    print(rooms)
+    return render_template('home.html',rooms=rooms)
 
 
 @app.route('/community', methods=['GET','POST'])

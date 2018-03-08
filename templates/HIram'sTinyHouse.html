@@ -17,23 +17,24 @@
 </head>
 
 <body>
-<!-- a href="http://getbootstrap.com/docs/3.3/components">Boostrap Components</a>
-<a href="https://www.w3schools.com/bootstrap/default.asp">Boostrap Tutorial</a -->
+<a href="http://getbootstrap.com/docs/3.3/components">Boostrap Components</a>
+<a href="https://www.w3schools.com/bootstrap/default.asp">Boostrap Tutorial</a>
     <div class="container">
-         <row>
-            <div class="col-lg-12 col-md-12">
-               <ul class="nav nav-tabs">
-                   {% block nav_list %}{% endblock %}
-               </ul>
-            </div>
-         </row>
-        {% block pageheader %}{% endblock %}
-        {% block body %}{% endblock %}
-        {% block footer %}{% endblock %}
+        <div class="row">
+			<div class="col-lg-12">
+				<h3>First Page Responsive</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2"><h3>Col-2</h3></div>
+			<div class="col-lg-2"><h3>Col-2</h3></div>
+			<div class="col-lg-2"><h3>Col-2</h3></div>
+			<div class="col-lg-3"><h3>Col-3</h3></div>
+			<div class="col-lg-3"><h3>Col-3</h3></div>
+        </div>
     </div>
     <script type="text/javascript" src="{{url_for('static',filename='./js/jquery-3.2.1.min.js') }}"></script>
     <script type="text/javascript"  src="{{url_for('static',filename='./js/bootstrap.min.js') }}"></script>
     <script type = "text/javascript" src = "{{ url_for('static', filename = './js/main.js') }}" ></script>
 
 </body>
-</html>

@@ -48,6 +48,11 @@ def myFunction2():
 def myFunction3():
     return render_template("pelayo.html")
 
+@app.route("/HIram'sTinyHouse")
+def hiramFunction():
+    return render_template("HIram'sTinyHouse.html")
+
+
 if __name__== "__main__":
     app.run(debug=True)
 
