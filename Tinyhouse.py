@@ -31,7 +31,13 @@ def index():
 
 @app.route('/community', methods=['GET','POST'])
 def community():
+    print('community')
     return render_template('community.html')
+
+@app.route('/remote', methods=['GET','POST'])
+def remote():
+    print('remote')
+    return render_template('Remote.html')
 
 @app.route('/switches', methods=['GET','POST'])
 def switches():
