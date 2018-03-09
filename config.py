@@ -3,6 +3,21 @@
 class Config:
 
     all_configuration={
+
+        'community': {
+            'label': 'Community',
+            'page': 'community.html',
+            'switches': {
+            }
+        },
+        'frontdoor': {
+            'label': 'Front Door',
+            'page': 'frontdoor.html',
+            'switches': {
+                'Porch Light':13,
+                'Door Lock':15
+            }
+        },
         'livingroom':{
                 'label':'Living Room',
                 'page':'livingroom.html',
@@ -20,7 +35,16 @@ class Config:
                 'Litchen Lamp': 21,
             }
         },
+        'beedroom': {
+            'label': 'Bedroom',
+            'page': 'kitchen.html',
+            'switches': {
+                'Kitchen Main': 19,
+                'Litchen Lamp': 21,
+            }
+        },
     }
+
 
     setup_switches = {
         'kitchen': 11,

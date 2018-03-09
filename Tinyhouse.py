@@ -24,8 +24,8 @@ GPIO.setup(15, GPIO.OUT) # Set up pint 27
 @app.route('/')
 def index():
     config=Config()
-    dinamic_navbar=config.getNavigationBar()
-    return render_template('mainpage.html', navbar=dinamic_navbar)
+    dinamic_navbar=config.getRooms()
+    return render_template('community.html', navigation=dinamic_navbar)
 
 @app.route('/home')
 def home():

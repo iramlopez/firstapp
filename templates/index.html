@@ -27,9 +27,19 @@
                </ul>
             </div>
          </row>
-        {% block pageheader %}{% endblock %}
-        {% block body %}{% endblock %}
-        {% block footer %}{% endblock %}
+        <row>
+            <div class="col-lg-4 col-md-4">
+                {%block switches %}{% endblock %}
+            </div>
+            <div class="col-lg-8 col-md-8">
+                {% block body %}{% endblock %}
+            </div>
+        </row>
+        <row>
+            {% block footer %}{% endblock %}
+        </row>
+
+
     </div>
     <script type="text/javascript" src="{{url_for('static',filename='./js/jquery-3.2.1.min.js') }}"></script>
     <script type="text/javascript"  src="{{url_for('static',filename='./js/bootstrap.min.js') }}"></script>

@@ -1,5 +1,12 @@
 {% extends "index.html" %}
+{%block nav_list %}
+ {% for pages in navigation %}
+<li><a href="{{navigation[pages]['page'] }}">{{ navigation[pages]['label']}}</a></li>
+ {% endfor %}
+{% endblock %}
+{%block switches %}
+    <h3>Switches</h3>
+{% endblock %}
 {% block body %}
-{% include "nbar.html" %}
 <h3>This is my community template</h3>
 {% endblock %}
