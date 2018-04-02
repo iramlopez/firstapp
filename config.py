@@ -2,49 +2,6 @@
 # we will marge date from a database
 class Config:
 
-    all_configuration={
-
-        'community': {
-            'label': 'Community',
-            'page': 'community.html',
-            'switches': {
-            }
-        },
-        'frontdoor': {
-            'label': 'Front Door',
-            'page': 'frontdoor.html',
-            'switches': {
-                'Porch Light':13,
-                'Door Lock':15
-            }
-        },
-        'livingroom':{
-                'label':'Living Room',
-                'page':'livingroom.html',
-                'switches':{
-                    'Main Living Room':13,
-                    'Living Room Lamp 1':15,
-                    'Living Room Lamp 2':17
-                }
-        },
-        'kitchen': {
-            'label': 'Kitchen',
-            'page': 'kitchen.html',
-            'switches': {
-                'Kitchen Main': 19,
-                'Litchen Lamp': 21,
-            }
-        },
-        'beedroom': {
-            'label': 'Bedroom',
-            'page': 'kitchen.html',
-            'switches': {
-                'Kitchen Main': 19,
-                'Litchen Lamp': 21,
-            }
-        },
-    }
-
 
     setup_switches = {
         'kitchen': 11,
@@ -54,22 +11,53 @@ class Config:
         'lamp2': 19
     }
 
-    navigation_bar={
+    all_configuration={
 
-        'community':'community.html',
-        'frontdoor':'frontdoor.html',
-        'livingrooom':'livingroom.html',
-        'bedroom':'bedroom.html',
-        'utilities':'utilities.html',
-        'remote':'remote'
+        'community': {
+            'label': 'Community',
+            'page': 'community',
+            'switches': {
+            }
+        },
+        'frontdoor': {
+            'label': 'Front Door',
+            'page': 'frontdoor',
+            'switches': {
+                'Porch Light':11,
+                'Door Lock':13
+            }
+        },
+        'livingroom':{
+                'label':'Living Room',
+                'page':'livingroom',
+                'switches':{
+                    'Main':15,
+                    'Fan':19,
+                    'Table Lamp 1':21,
+                    'Table Lamp 2':23
+                }
+        },
+        'kitchen': {
+            'label': 'Kitchen',
+            'page': 'kitchen',
+            'switches': {
+                'Kitchen Main': 16,
+                'Kitchen Lamp': 18,
+            }
+        },
+        'bedroom': {
+            'label': 'Bedroom',
+            'page': 'bedroom',
+            'switches': {
+                'Main Light': 22,
+                'Lamp 1': 7,
+                'Lamp 2': 6,
+            }
+        },
     }
-
-    def getNavigationBar(self):
-        return self.navigation_bar
 
     def getSetupSwitches(self):
         return self.setup_switches
-
 
     def getRooms(self):
         return self.all_configuration

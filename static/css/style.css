@@ -25,3 +25,19 @@ li a:hover {
 .active{
   background-color: #0066CC;
 }
+
+.spacer-5{
+    margin-top:5px;
+}
+
+.spacer-10{
+    margin-top:10px;
+}
+
+.spacer-15{
+    margin-top:15px;
+}
+
+.spacer-20{
+    margin-top:20px;
+}

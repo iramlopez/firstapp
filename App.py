@@ -43,7 +43,7 @@ def myjilfunction():
 @app.route("/chris")
 def myFunction2():
     return render_template("chris.html")
-  
+
 @app.route("/pelayo")
 def myFunction3():
     return render_template("pelayo.html")
