@@ -11,7 +11,6 @@ cors = CORS(app,support_credentials=True)
 app.config['CORS_HEADERS'] = 'application/json'
 # chan_list=[11,13,15]
 # GPIO.setup(chan_list,GPIO.OUT)
-
 GPIO.setmode(GPIO.BOARD) # Set board mode to BROAD
 GPIO.setup(11, GPIO.OUT) # set up pin 11
 GPIO.setup(13, GPIO.OUT) # Set up pin 13
@@ -25,8 +24,6 @@ GPIO.setup(23,GPIO.OUT)
 # Connectiong a url token with a page
 # By default flask uses templates file directory for the templates
 # By default flask uses static file directory for the static content css, js, images
-
-
 #Returning a basic response
 @app.route('/',methods=['GET','POST'])
 def index():
