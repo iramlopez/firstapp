@@ -1,3 +1,17 @@
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.col-lg-12 .col-md-12 .navbar .navbar-collapse {
+  text-align: center;
+}
+
+div {
+    border: 1px solid #FFF;
+
+}
 
 ul {
     list-style-type: none;
