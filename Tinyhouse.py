@@ -53,6 +53,9 @@ def setswitch():
     switch=request.get_json()
     print(switch.get('port'))
     print(switch.get('status'))
+    port=int(switch.get('port'))
+    stat=int(switch.get('status'))
+
     GPIO.output(switch.get('port'),switch.get('status'))
     return (jsonify({"response":"done"})),200
 
