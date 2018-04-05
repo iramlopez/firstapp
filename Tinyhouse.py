@@ -27,10 +27,14 @@ GPIO.setup(23,GPIO.OUT)
 #Returning a basic response
 @app.route('/',methods=['GET','POST'])
 def index():
+    room_name='community'
+    print (request.url_root)
+    print(room_name)
     config=Config()
     rooms=config.getRooms()
-    room='';
-    return render_template('index.html', navigation=rooms, path=request.url_root,room=room)
+    room=rooms.get(room_name)
+    dinamic_navbar=config.getRooms()
+    return render_template('index.html',navigation=rooms, path=request.url_root,room=room)
 
 #Returning a basic response
 @app.route('/<room_name>',methods=['GET','POST'])
