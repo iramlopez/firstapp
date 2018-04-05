@@ -33,25 +33,25 @@ class Config:
                 'switches':{
                     'Main':15,
                     'Fan':19,
-                    'Table Lamp 1':21,
-                    'Table Lamp 2':23
+                    'Table Lamp 1':29,
+                    'Table Lamp 2':31
                 }
         },
         'kitchen': {
             'label': 'Kitchen',
             'page': 'kitchen',
             'switches': {
-                'Kitchen Main': 16,
-                'Kitchen Lamp': 18,
+                'Kitchen Main': 15,
+                'Kitchen Lamp': 29,
             }
         },
         'bedroom': {
             'label': 'Bedroom',
             'page': 'bedroom',
             'switches': {
-                'Main Light': 22,
-                'Lamp 1': 7,
-                'Lamp 2': 6,
+                'Main Light': 21,
+                'Lamp 1': 16,
+                'Lamp 2': 18,
             }
         },
     }
