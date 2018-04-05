@@ -17,7 +17,7 @@ GPIO.setup(15, GPIO.OUT) # Set up pin 13
 GPIO.setup(16, GPIO.OUT) # Set up pint 15
 GPIO.setup(18,GPIO.OUT)
 GPIO.setup(19,GPIO.OUT)
-GPIO.setup(22,GPIO.OUT)
+GPIO.setup(21,GPIO.OUT)
 GPIO.setup(29,GPIO.OUT)
 GPIO.setup(31,GPIO.OUT)
 # GPIO.setup(port, GPIO.IN)

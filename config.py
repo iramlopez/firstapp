@@ -49,7 +49,7 @@ class Config:
             'label': 'Bedroom',
             'page': 'bedroom',
             'switches': {
-                'Main Light': 22,
+                'Main Light': 21,
                 'Lamp 1': 16,
                 'Lamp 2': 18,
             }
