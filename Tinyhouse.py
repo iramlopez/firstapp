@@ -13,11 +13,13 @@ app.config['CORS_HEADERS'] = 'application/json'
 # GPIO.setup(chan_list,GPIO.OUT)
 GPIO.setmode(GPIO.BOARD) # Set board mode to BROAD
 GPIO.setup(11, GPIO.OUT) # set up pin 11
-GPIO.setup(13, GPIO.OUT) # Set up pin 13
-GPIO.setup(15, GPIO.OUT) # Set up pint 15
+GPIO.setup(15, GPIO.OUT) # Set up pin 13
+GPIO.setup(16, GPIO.OUT) # Set up pint 15
+GPIO.setup(18,GPIO.OUT)
 GPIO.setup(19,GPIO.OUT)
-GPIO.setup(21,GPIO.OUT)
-GPIO.setup(23,GPIO.OUT)
+GPIO.setup(22,GPIO.OUT)
+GPIO.setup(29,GPIO.OUT)
+GPIO.setup(31,GPIO.OUT)
 # GPIO.setup(port, GPIO.IN)
 # Use flask to create a basic web server
 # @ Signifies a decorator - way to wrap a function and modifying its behavior
