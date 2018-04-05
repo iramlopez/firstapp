@@ -9,7 +9,7 @@ $(document).ready(function(){
 					};
             console.log(dataset);
 	        $.ajax({
-	        url : 'http://127.0.0.1:5000/set/switch',
+	        url : 'http://192.168.1.145:8080/set/switch',
 	        dataType : 'application/json',
 	        contentType: 'application/json; charset=UTF-8',
 	        data:dataset,
