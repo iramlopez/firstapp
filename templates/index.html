@@ -41,6 +41,20 @@
 
             <div class="col-lg-8 col-md-8">
                     <h4>This is the {{ room['label']}} Extra Content</h4>
+                  {% if room['page'] == 'community' %}
+                    {% include 'community.html' %}
+                  {% elif room['page'] == 'kitchen' %}
+                    {% include 'kitchen.html' %}
+                  {% elif room['page'] == 'bedroom' %}
+                    {% include 'bedroom.html' %}
+                  {% elif room['page'] == 'livingroom' %}
+                    {% include 'livingroom.html' %}
+
+                  {% endif %}
+
+
+
+
             </div>
         </row>
 
@@ -52,7 +66,7 @@
                         <h4>My Tiny House</h4>
                         <a href="#">Help and Support</a> <a href="#">Contact Main Center</a>
                     </Footer>
-
+                {% include 'community.html' %}
                 </center>
             </div>
         </row>
