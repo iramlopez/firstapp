@@ -23,25 +23,25 @@ class Config:
             'label': 'Front Door',
             'page': 'frontdoor',
             'switches': {
-                'Porch Light':11,
-                'Door Lock':13
+                'Porch Light':23,
+                'Door Lock':24
             }
         },
         'livingroom':{
                 'label':'Living Room',
                 'page':'livingroom',
                 'switches':{
-                    'Main':15,
-                    'Fan':19,
-                    'Table Lamp 1':29,
-                    'Table Lamp 2':31
+                    'Main':12,
+                    'Fan':25,
+                    'Table Lamp 1':5,
+                    'Table Lamp 2':6
                 }
         },
         'kitchen': {
             'label': 'Kitchen',
             'page': 'kitchen',
             'switches': {
-                'Kitchen Main': 15,
+                'Kitchen Main': 22,
                 'Kitchen Lamp': 29,
             }
         },
@@ -49,7 +49,7 @@ class Config:
             'label': 'Bedroom',
             'page': 'bedroom',
             'switches': {
-                'Main Light': 21,
+                'Main Light': 17,
                 'Lamp 1': 16,
                 'Lamp 2': 18,
             }
