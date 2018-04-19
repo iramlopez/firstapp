@@ -3,13 +3,14 @@ $(document).ready(function(){
 
 	function setSwitch(id,state){
 
+        var app_url=$('#serverip').val();
 		var dataset={
 					'port':id,
 					'status':state
 					};
             console.log(dataset);
 	        $.ajax({
-	        url : 'http://192.168.1.145:8080/set/switch',
+	        url : app_url+'set/switch',
 	        dataType : 'application/json',
 	        contentType: 'application/json; charset=UTF-8',
 	        data:dataset,

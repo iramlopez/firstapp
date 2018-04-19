@@ -27,10 +27,10 @@ GPIO.setup(31,GPIO.OUT)
 # By default flask uses templates file directory for the templates
 # By default flask uses static file directory for the static content css, js, images
 #Returning a basic response
+
 @app.route('/',methods=['GET','POST'])
 def index():
     room_name='community'
-    print (request.url_root)
     print(room_name)
     config=Config()
     rooms=config.getRooms()
@@ -61,6 +61,17 @@ def setswitch():
     GPIO.output(port,stat)
     return (jsonify({"response":"done"})),200
 
+@app.route('/cleanup',methods=['GET','POST'])
+def cleanup():
+    room_name='community'
+    GPIO.cleanup()
+    print (request.url_root)
+    print(room_name)
+    config=Config()
+    rooms=config.getRooms()
+    room=rooms.get(room_name)
+    dinamic_navbar=config.getRooms()
+    return render_template('index.html',navigation=rooms, path=request.url_root,room=room)
 
 if __name__== "__main__":
-    app.run(debug=True,host='0.0.0.0',port=8080)
+    app.run(debug=True,host='0.0.0.0')

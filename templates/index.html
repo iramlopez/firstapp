@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SATA/Riverside Tinyhouse</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='./css/bootstrap.min.css') }}" >
@@ -14,9 +15,12 @@
     <!-- Custom stylesheet -->
     <link rel=stylesheet type="text/css" href="{{ url_for('static', filename='./css/style.css') }}">
 
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/sata.ico') }}">
+
 </head>
 
 <body>
+<input type="hidden" id="serverip" value="{{path}}">
     <div class="container">
 
         <div class="spacer-15"></div>
