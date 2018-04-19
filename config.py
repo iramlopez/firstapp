@@ -31,8 +31,8 @@ class Config:
                 'label':'Living Room',
                 'page':'livingroom',
                 'switches':{
-                    'Main':12,
-                    'Fan':25,
+                    'Main':11,
+                    'Fan':37,
                     'Table Lamp 1':5,
                     'Table Lamp 2':6
                 }
@@ -41,17 +41,16 @@ class Config:
             'label': 'Kitchen',
             'page': 'kitchen',
             'switches': {
-                'Kitchen Main': 22,
-                'Kitchen Lamp': 29,
+                'Kitchen Main': 13,
+                'Kitchen Lamp': 18,
             }
         },
         'bedroom': {
             'label': 'Bedroom',
             'page': 'bedroom',
             'switches': {
-                'Main Light': 17,
+                'Main Light': 15,
                 'Lamp 1': 16,
-                'Lamp 2': 18,
             }
         },
     }
