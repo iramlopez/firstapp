@@ -1,3 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+
 # read from a db
 # we will marge date from a database
 class Config:
@@ -23,8 +34,8 @@ class Config:
             'label': 'Front Door',
             'page': 'frontdoor',
             'switches': {
-                'Porch Light':35,
-                'Door Lock':37
+                'Porch Light':23,
+                'Door Lock':24
             }
         },
         'livingroom':{
@@ -32,8 +43,9 @@ class Config:
                 'page':'livingroom',
                 'switches':{
                     'Main':11,
-                    'Fan':40,
-                    'Table Lamp 1':38,
+                    'Fan':37,
+                    'Table Lamp 1':5,
+                    'Table Lamp 2':6
                 }
         },
         'kitchen': {
@@ -41,7 +53,7 @@ class Config:
             'page': 'kitchen',
             'switches': {
                 'Kitchen Main': 13,
-                'Kitchen Lamp': 29,
+                'Kitchen Lamp': 18
             }
         },
         'bedroom': {
@@ -49,7 +61,7 @@ class Config:
             'page': 'bedroom',
             'switches': {
                 'Main Light': 15,
-                'Lamp 1': 31,
+                'Lamp 1': 16
             }
         },
     }
