@@ -69,7 +69,7 @@ def setswitch():
 
 
 #Setting the Swith on/off
-@app.route('/set/notification/<notification>',methods=['GET','POST'])
+@app.route('/set/notification/<notification>',methods=['GET'])
 @cross_origin(support_credentials=True)
 def setnotification(notification):
     print("Notification")
@@ -79,7 +79,7 @@ def setnotification(notification):
 
 
 #Setting the Swith on/off
-@app.route('/unset/notification/<notification>',methods=['GET','POST'])
+@app.route('/unset/notification/<notification>',methods=['GET'])
 @cross_origin(support_credentials=True)
 def unsetnotification(notification):
     print("Unset Notification")
@@ -114,4 +114,4 @@ def handle_my_custom_event(arg1, arg2, arg3):
     print('received args: ' + arg1 + arg2 + arg3)
 
 if __name__== "__main__":
-    socketio.run(app,debug=True)
+    socketio.run(app,'0.0.0.0',5000,debug=True)

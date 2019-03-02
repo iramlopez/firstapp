@@ -1,0 +1,19 @@
+import RPi.GPIO as GPIO
+import time
+GPIO.setmode(GPIO.BOARD) # Set board mode to BROAD
+#GPIO.setup(11, GPIO.OUT) # set up pin 11
+GPIO.setup(12, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+
+
+
+
+
+
+
+
+
+while True:
+	input_state=GPIO.input(12)
+	if input_state==False:
+		print("button pressed")
+		time.sleep(0.2)
