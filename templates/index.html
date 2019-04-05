@@ -54,14 +54,14 @@
 
             <div class="col-lg-8 col-md-8">
                 <h4> {{ room['label']}} </h4>
-                  {% if room['page'] == 'community' %}
-                    {% include 'community.html' %}
-                  {% elif room['label'] == 'kitchen' %}
-                    {% include 'kitchen.html' %}
+                  {% if room['page'] == "community" %}
+                    {% include "community.html" %}
+                  {% elif room['label'] == "kitchen" %}
+                    {% include "kitchen.html" %}
                   {% elif room['page'] == 'bedroom' %}
-                    {% include 'bedroom.html' %}
-                  {% elif room['page'] == 'livingroom' %}
-                    {% include 'livingroom.html' %}
+                    {% include "bedroom.html" %}
+                  {% elif room['page'] == "livingroom" %}
+                    {% include "livingroom.html" %}
                   {% endif %}
             </div>
 
