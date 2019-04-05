@@ -1,1 +1,32 @@
-<p>This is the front door</p>
+
+<div class="col-lg-12 col-md-12">
+
+    <div class="col-lg-12 col-md-12">
+        <h3>Front Door</h3>
+    </div>
+    <div class="col-lg-12 col-md-12">
+        <div class="col-lg-12 col-md-12">
+            <h3>Front Door Events</h3>
+        </div>
+        <div class="col-lg-12 col-md-12">
+            <img src="{{url_for('static',filename='images/billgates.png')}}" width=100px"; height="100px" class="img-responsive" />
+            Bill ring door bell at: <div id="bill"></div>
+        </div>
+        <div class="col-lg-12 col-md-12">
+            <img src="{{url_for('static',filename='images/han.png')}}" width=100px"; height="100px" class="img-responsive" />
+            Han called you at: <div id="han"></div>
+        </div>
+         <div class="col-lg-12 col-md-12">
+            <img src="{{url_for('static',filename='images/chewy.png')}}" width=100px"; height="100px" class="img-responsive" />
+             <span style="color:red">Unknown suspect at Door at:</span> <div id="chew"></div>
+        </div>
+    </div>
+<script>
+    var d= new Date();
+    document.getElementById("bill").innerHTML = d;
+    var t=new Date(d.setHours(4));
+    document.getElementById("han").innerHTML =t;
+    document.getElementById("chew").innerHTML =t;
+</script>
+</div>
+

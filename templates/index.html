@@ -54,24 +54,29 @@
 
             <div class="col-lg-8 col-md-8">
                 <h4> {{ room['label']}} </h4>
-                  {% if room['page'] == "community" %}
+                {% set var=room['page'] %}
+                  {% if var == "community" %}
                     {% include "community.html" %}
-                  {% elif room['label'] == "kitchen" %}
+                  {% elif var=="kitchen" %}
                     {% include "kitchen.html" %}
-                  {% elif room['page'] == 'bedroom' %}
+                  {% elif var == 'bedroom' %}
                     {% include "bedroom.html" %}
-                  {% elif room['page'] == "livingroom" %}
+                  {% elif var == "livingroom" %}
                     {% include "livingroom.html" %}
+                  {% elif var == "frontdoor" %}
+                    {% include "frontdoor.html" %}
                   {% endif %}
+
             </div>
 
         </row>
 
         <row>
+            <div style="margin-top:20px"></div>
             <div class="col-lg-12 col-md-12">
                 <center>
                     <Footer>
-                        <div class="clock">3:25 PM, Monday 2, 2018</div>
+                        <div id="clock"></div>
                         <h4>My Tiny House</h4>
                         <a href="#">Help and Support</a> <a href="#">Contact Main Center</a>
                     </Footer>
@@ -84,6 +89,11 @@
     <script type="text/javascript" src="{{url_for('static',filename='./js/jquery-3.2.1.min.js') }}"></script>
     <script type="text/javascript"  src="{{url_for('static',filename='./js/bootstrap.min.js') }}"></script>
     <script type = "text/javascript" src = "{{ url_for('static', filename = './js/main.js') }}" ></script>
+
+    <script>
+        var d= new Date();
+        document.getElementById("clock").innerHTML = d;
+    </script>
 
 </body>
 </html>
